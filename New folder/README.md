@@ -48,13 +48,13 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 | **Folium** | Interactive Leaflet.js maps via Python |
 | **Rasterio** | Raster (DEM) data handling |
 | **Scikit-learn** | Min-Max normalisation of risk factors |
-| **Jupyter Notebook** | Literate programming environment |
+| **Jupyter Notebook** |programming environment |
 
 ---
 
 ##  Methodology
 
-### 1. Data Acquisition & Simulation
+### 1. Data download
 
 ### 2. Feature Engineering
 Each raw variable is converted to a **risk score (0–1)**:
