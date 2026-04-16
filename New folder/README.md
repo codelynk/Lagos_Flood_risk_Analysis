@@ -25,9 +25,9 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 
 ---
 
-## 🎯 Workflow
+## Workflow
 
-1. Acquired and process spatial data for the three LGAs
+1. Acquire and process spatial data for the three LGAs
 2. Engineer flood-risk proxy indicators (elevation, rainfall, population density, land-use)
 3. Normalise and combine indicators using a weighted overlay approach
 4. Visualise results as both static (PNG) and interactive (HTML) maps
@@ -37,7 +37,7 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 
 
 
-## 🧰 Tools & Libraries
+## Tools & Libraries
 
 | Library | Purpose |
 |---------|---------|
@@ -52,7 +52,7 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 
 ---
 
-## 📐 Methodology
+##  Methodology
 
 ### 1. Data Acquisition & Simulation
 
@@ -99,11 +99,10 @@ Default weights reflect established hydrological literature:
 | Output | Description |
 |--------|-------------|
 | `flood_risk_static.png` | Multi-panel figure: individual risk factors + composite FRI choropleth |
-| `flood_risk_interactive.html` | Folium map with hover tooltips, layer toggles, and colour-coded LGA zones |
 
 ---
 
-## 📊 Key Findings (Preview)
+## Key Findings (Preview)
 
 - **Alimosho** contains the largest contiguous high-risk zones due to low-lying terrain and high population density
 - **Agege** shows concentrated very-high-risk pockets along simulated creek corridors
@@ -112,8 +111,7 @@ Default weights reflect established hydrological literature:
 
 ---
 
-## ⚠️ Limitations
-
+##  Limitations
 
 - Static weights are subjective; AHP or ML-derived weights preferred for production
 - Dynamic flood modelling (HEC-RAS, LISFLOOD) not included
@@ -121,7 +119,7 @@ Default weights reflect established hydrological literature:
 
 ---
 
-## 🔭 Future Work
+## 🔭 Future updates
 
 - Integrate live CHIRPS rainfall API and SRTM 30m DEM
 - Apply SAR-based flood extent mapping (Sentinel-1)
@@ -130,7 +128,7 @@ Default weights reflect established hydrological literature:
 
 ---
 
-## 📚 References
+##  References
 
 1. Nkwunonwo, U. C. et al. (2020). *Urban flood modelling combining cellular automata framework with semi-implicit finite difference numerical formulation.* Journal of African Earth Sciences.
 2. Komolafe, A. A. et al. (2018). *A review of flood risk analysis in Nigeria.* Earth-Science Reviews.
@@ -139,9 +137,9 @@ Default weights reflect established hydrological literature:
 
 ---
 
-## 👤 Author
+## Author
 
 **Patrick Nkwachukwu Ezeh**  
 
 ---
-*This project uses simulated data structured to reflect real geographic and hydrological patterns. It is intended as a portfolio demonstration and should not be used for operational emergency management without validated real-world datasets.*
+
