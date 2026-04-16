@@ -1,4 +1,4 @@
-# 🌊 Flood Risk Mapping & Analysis — Lagos State, Nigeria
+# Flood Risk Mapping & Analysis — Lagos State, Nigeria
 ### Focus: Agege · Ikeja · Alimosho Local Government Areas
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Lagos State, Nigeria, is one of West Africa's most flood-vulnerable megacities. Rapid urbanisation, inadequate drainage infrastructure, low-lying coastal and inland terrain, and intense seasonal rainfall (averaging 1,400–1,700 mm/year) combine to make flooding a recurring humanitarian and economic crisis.
 
@@ -25,9 +25,9 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 
 ---
 
-## 🎯 Objectives
+## 🎯 Workflow
 
-1. Acquire and process spatial data for the three LGAs
+1. Acquired and process spatial data for the three LGAs
 2. Engineer flood-risk proxy indicators (elevation, rainfall, population density, land-use)
 3. Normalise and combine indicators using a weighted overlay approach
 4. Visualise results as both static (PNG) and interactive (HTML) maps
@@ -35,25 +35,7 @@ Using a **Weighted Overlay Model (WOM)**, four environmental and socioeconomic f
 
 ---
 
-## 🗂️ Project Structure
 
-```
-flood_risk_lagos/
-│
-├── README.md                        ← This file
-├── flood_risk_analysis.ipynb        ← Main analysis notebook
-│
-├── data/
-│   ├── README_data.txt              ← Data sources & download instructions
-│   └── (auto-generated spatial files placed here at runtime)
-│
-└── outputs/
-    └── maps/
-        ├── flood_risk_static.png    ← Static choropleth map (auto-generated)
-        └── flood_risk_interactive.html ← Interactive Folium map (auto-generated)
-```
-
----
 
 ## 🧰 Tools & Libraries
 
@@ -73,13 +55,6 @@ flood_risk_lagos/
 ## 📐 Methodology
 
 ### 1. Data Acquisition & Simulation
-Where live APIs are unavailable, **structured stochastic simulation** is used to generate geographically-coherent datasets that mirror real-world patterns documented in Lagos flood literature:
-
-- **LGA Boundaries** — Synthesised polygons matching published administrative extents
-- **Elevation (DEM proxy)** — Lower elevations assigned to known flood plains (Agege creek valleys, Alimosho lowlands)
-- **Rainfall** — Annual totals modelled with spatial gradient from Atlantic coast inland
-- **Population Density** — Based on LGA-level census projections (NPC 2023)
-- **Land Use** — Impervious surface fraction derived from Landsat urban extent studies
 
 ### 2. Feature Engineering
 Each raw variable is converted to a **risk score (0–1)**:
@@ -118,27 +93,8 @@ Default weights reflect established hydrological literature:
 
 ---
 
-## 🚀 How to Run
 
-### Prerequisites
-```bash
-pip install geopandas pandas numpy matplotlib folium scikit-learn shapely contextily jupyter
-```
-
-### Launch Notebook
-```bash
-cd flood_risk_lagos
-jupyter notebook flood_risk_analysis.ipynb
-```
-
-Run all cells top-to-bottom (`Kernel → Restart & Run All`). The notebook will:
-1. Simulate all spatial datasets
-2. Compute the Flood Risk Index
-3. Export maps to `outputs/maps/`
-
----
-
-## 🗺️ Sample Outputs
+## Outputs
 
 | Output | Description |
 |--------|-------------|
@@ -158,7 +114,7 @@ Run all cells top-to-bottom (`Kernel → Restart & Run All`). The notebook will:
 
 ## ⚠️ Limitations
 
-- Elevation and rainfall data are simulated; real SRTM/CHIRPS data would improve accuracy
+
 - Static weights are subjective; AHP or ML-derived weights preferred for production
 - Dynamic flood modelling (HEC-RAS, LISFLOOD) not included
 - Temporal variation (seasonal flooding cycles) not captured
@@ -185,9 +141,7 @@ Run all cells top-to-bottom (`Kernel → Restart & Run All`). The notebook will:
 
 ## 👤 Author
 
-**Geospatial Data Science Portfolio Project**  
-*Built with 100% open-source Python GIS tools*  
-*Lagos, Nigeria · 2024*
+**Patrick Nkwachukwu Ezeh**  
 
 ---
 *This project uses simulated data structured to reflect real geographic and hydrological patterns. It is intended as a portfolio demonstration and should not be used for operational emergency management without validated real-world datasets.*
